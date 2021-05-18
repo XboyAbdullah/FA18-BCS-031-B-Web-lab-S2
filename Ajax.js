@@ -22,6 +22,7 @@ $.ajax({
 });
     });
 
+
     $("#UpdatedSave").click(function() {
         var id = $("#updateId").val();
         var name =  $("#UpdateName").val();
@@ -106,11 +107,11 @@ $.ajax({
              var rec=result[i];
               req.append(`
               <div class="product" data-id="${rec._id}">
-               <u><h4>Name:</h4></u><p>${rec.name}</p>
-               <u><h4>Price:</h4></u><p>${rec.price}<p>
-               <u><h4>Color:</h4></u><p>${rec.color}<p>
-               <u><h4>Department:</h4></u><p>${rec.department}</p>
-               <u><h4>Description:</h4></u><p><button class="btn btn-danger btn-sm float-right"> Delete</button> <button class="btn btn-warning btn-sm float-right"> Edit</button>
+               <h4>Name:</h4><p>${rec.name}</p>
+               <h4>Price:</h4><p>${rec.price}<p>
+               <h4>Color:</h4><p>${rec.color}<p>
+               <h4>Department:</h4><p>${rec.department}</p>
+               <h4>Description:</h4><p><button class="btn btn-danger btn-sm float-right"> Delete</button> <button class="btn btn-warning btn-sm float-right"> Edit</button>
                 ${rec.description}</p>
               </div>`);
     
