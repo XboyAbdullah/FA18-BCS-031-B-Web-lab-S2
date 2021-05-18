@@ -43,14 +43,6 @@ $.ajax({
       });
     });
     
-
-    
-    
-       
-    
-    
-    
-    
     function handleedit(){
         var btn=$(this);
         var parent=btn.closest(".product");
@@ -88,9 +80,6 @@ $.ajax({
             },
     
         });
-    
-    
-    
     }
     
     function reqajex()
@@ -114,14 +103,7 @@ $.ajax({
                <h4>Description:</h4><p><button class="btn btn-danger btn-sm float-right"> Delete</button> <button class="btn btn-warning btn-sm float-right"> Edit</button>
                 ${rec.description}</p>
               </div>`);
-    
-              
-              
-             
-    
           }
         },
-        
-    
     });
     }
